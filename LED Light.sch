@@ -7663,6 +7663,7 @@ Source: www.kingbright.com</description>
 <part name="LED2" library="led" deviceset="LED" device="TOPLED-SANTANA"/>
 <part name="LED3" library="led" deviceset="LED" device="TOPLED-SANTANA"/>
 <part name="U$1" library="fab" deviceset="AVRISP" device="SMD"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="R1206" value="10M"/>
 </parts>
 <sheets>
 <sheet>
@@ -7680,6 +7681,7 @@ Source: www.kingbright.com</description>
 <instance part="LED2" gate="G$1" x="101.6" y="17.78"/>
 <instance part="LED3" gate="G$1" x="111.76" y="17.78"/>
 <instance part="U$1" gate="G$1" x="73.66" y="78.74"/>
+<instance part="R3" gate="G$1" x="63.5" y="43.18" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7718,8 +7720,13 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PB0(MOSI)"/>
-<wire x1="40.64" y1="45.72" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="45.72" x2="60.96" y2="45.72" width="0.1524" layer="91"/>
 <label x="55.88" y="45.72" size="1.778" layer="95" rot="MR0"/>
+<wire x1="60.96" y1="45.72" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="48.26" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
+<junction x="63.5" y="48.26"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7827,6 +7834,13 @@ Source: www.kingbright.com</description>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="25.4" x2="101.6" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB3(ADC3)"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

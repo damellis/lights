@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1559,6 +1559,7 @@ design rules under a new name.</description>
 <element name="LED2" library="led" package="MINI-TOPLED-SANTANA" value="" x="25.4" y="64.77" rot="R180"/>
 <element name="LED3" library="led" package="MINI-TOPLED-SANTANA" value="" x="29.21" y="64.77" rot="R180"/>
 <element name="U$1" library="fab" package="2X03SMD" value="AVRISPSMD" x="18.923" y="17.145" rot="R180"/>
+<element name="R3" library="rcl" package="R1206" value="10M" x="34.036" y="24.13"/>
 </elements>
 <signals>
 <signal name="VCC">
@@ -1587,6 +1588,11 @@ design rules under a new name.</description>
 <wire x1="19.05" y1="17.145" x2="19.05" y2="12.7" width="0.254" layer="1"/>
 <wire x1="19.05" y1="12.7" x2="24.765" y2="12.7" width="0.254" layer="1"/>
 <wire x1="24.765" y1="12.7" x2="24.765" y2="14.4272" width="0.254" layer="1"/>
+<contactref element="R3" pad="2"/>
+<wire x1="19.05" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="1"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="82.55" width="0.254" layer="1"/>
+<wire x1="12.7" y1="82.55" x2="35.458" y2="82.55" width="0.254" layer="1"/>
+<wire x1="35.458" y1="82.55" x2="35.458" y2="24.13" width="0.254" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="U1" pad="4"/>
@@ -1666,6 +1672,12 @@ design rules under a new name.</description>
 <wire x1="22.86" y1="28.092" x2="22.86" y2="39.37" width="0.254" layer="1"/>
 <wire x1="22.86" y1="39.37" x2="25.4" y2="39.37" width="0.254" layer="1"/>
 <wire x1="25.4" y1="39.37" x2="25.4" y2="62.57" width="0.254" layer="1"/>
+</signal>
+<signal name="N$2">
+<contactref element="U1" pad="2"/>
+<contactref element="R3" pad="1"/>
+<wire x1="27.305" y1="21.1582" x2="27.305" y2="24.13" width="0.254" layer="1"/>
+<wire x1="27.305" y1="24.13" x2="32.614" y2="24.13" width="0.254" layer="1"/>
 </signal>
 </signals>
 </board>
