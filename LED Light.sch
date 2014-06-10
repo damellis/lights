@@ -7790,45 +7790,23 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <vertex x="-1.05" y="-1.675"/>
 </polygon>
 </package>
-<package name="USB_MINIB_POWER">
-<wire x1="-0.03" y1="3.8" x2="2.07" y2="3.8" width="0.2032" layer="21"/>
-<wire x1="4.57" y1="3.1" x2="4.57" y2="2.2" width="0.2032" layer="21"/>
-<wire x1="4.57" y1="-2.2" x2="4.57" y2="-3.1" width="0.2032" layer="21"/>
-<wire x1="2.07" y1="-3.8" x2="-0.03" y2="-3.8" width="0.2032" layer="21"/>
-<wire x1="-4.63" y1="3.8" x2="-4.63" y2="-3.8" width="0.2032" layer="51"/>
-<wire x1="-4.63" y1="-3.8" x2="-3.23" y2="-3.8" width="0.2032" layer="51"/>
-<wire x1="-4.63" y1="3.8" x2="-3.23" y2="3.8" width="0.2032" layer="51"/>
-<smd name="D+" x="3.77" y="0" dx="2.5" dy="0.35" layer="1"/>
-<smd name="D-" x="3.77" y="0.8" dx="2.5" dy="0.35" layer="1"/>
-<smd name="GND" x="3.77" y="-1.8" dx="2.5" dy="0.75" layer="1"/>
-<smd name="ID" x="3.77" y="-0.8" dx="2.5" dy="0.35" layer="1"/>
-<smd name="SHIELD@1" x="-1.73" y="-4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="SHIELD@2" x="-1.73" y="4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="SHIELD@4" x="3.77" y="-4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="SHIELD@3" x="3.77" y="4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="VBUS" x="3.77" y="1.8" dx="2.5" dy="0.75" layer="1"/>
-<text x="-2.54" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-2.54" y="0" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="USB_MINIB">
-<wire x1="-0.03" y1="3.8" x2="2.07" y2="3.8" width="0.2032" layer="21"/>
-<wire x1="4.57" y1="3.1" x2="4.57" y2="2.2" width="0.2032" layer="21"/>
-<wire x1="4.57" y1="-2.2" x2="4.57" y2="-3.1" width="0.2032" layer="21"/>
-<wire x1="2.07" y1="-3.8" x2="-0.03" y2="-3.8" width="0.2032" layer="21"/>
-<wire x1="-4.63" y1="3.8" x2="-4.63" y2="-3.8" width="0.2032" layer="51"/>
-<wire x1="-4.63" y1="-3.8" x2="-3.23" y2="-3.8" width="0.2032" layer="51"/>
-<wire x1="-4.63" y1="3.8" x2="-3.23" y2="3.8" width="0.2032" layer="51"/>
-<smd name="D+" x="3.77" y="0" dx="2.5" dy="0.35" layer="1"/>
-<smd name="D-" x="3.77" y="0.8" dx="2.5" dy="0.35" layer="1"/>
-<smd name="GND" x="3.77" y="-1.6" dx="2.5" dy="0.35" layer="1"/>
-<smd name="ID" x="3.77" y="-0.8" dx="2.5" dy="0.35" layer="1"/>
-<smd name="SHIELD@1" x="-1.73" y="-4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="SHIELD@2" x="-1.73" y="4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="SHIELD@4" x="3.77" y="-4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="SHIELD@3" x="3.77" y="4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="VBUS" x="3.77" y="1.6" dx="2.5" dy="0.35" layer="1"/>
-<text x="-2.54" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-2.54" y="0" size="0.4064" layer="27">&gt;VALUE</text>
+<package name="USB_A_VERTICAL">
+<pad name="D+" x="-1" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="D-" x="1" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="VBUS" x="3.5" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="GND" x="-3.5" y="0" drill="0.8" shape="long" rot="R90"/>
+<wire x1="-6" y1="0" x2="-6" y2="3" width="0.127" layer="21"/>
+<wire x1="-6" y1="3" x2="6" y2="3" width="0.127" layer="21"/>
+<wire x1="6" y1="3" x2="6" y2="0" width="0.127" layer="21"/>
+<wire x1="-6" y1="0" x2="-6.7" y2="-0.7" width="0.127" layer="21" curve="90"/>
+<wire x1="-6.7" y1="-0.7" x2="-6.1" y2="-1.3" width="0.127" layer="21" curve="90"/>
+<wire x1="-6.1" y1="-1.3" x2="-6" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-6" y1="-1.3" x2="-6" y2="-3" width="0.127" layer="21"/>
+<wire x1="6" y1="0" x2="6.7" y2="-0.7" width="0.127" layer="22" curve="-90"/>
+<wire x1="6.7" y1="-0.7" x2="6.1" y2="-1.3" width="0.127" layer="22" curve="-90"/>
+<wire x1="6" y1="-1.3" x2="6" y2="-3" width="0.127" layer="21"/>
+<smd name="P$1" x="-6.5" y="-1" dx="2.54" dy="1.27" layer="1" rot="R90"/>
+<smd name="P$2" x="6.5" y="-1" dx="2.54" dy="1.27" layer="1" rot="R90"/>
 </package>
 <package name="OP580DA">
 <wire x1="1.6" y1="-1.4" x2="-1.6" y2="-1.4" width="0.1524" layer="21"/>
@@ -7879,18 +7857,14 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <pin name="TH" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
 <symbol name="USB">
-<wire x1="5.08" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="0" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<text x="3.81" y="-5.08" size="2.54" layer="94" rot="R90">USB</text>
-<pin name="D+" x="-2.54" y="2.54" visible="pad" length="short"/>
-<pin name="D-" x="-2.54" y="0" visible="pad" length="short"/>
-<pin name="VBUS" x="-2.54" y="-2.54" visible="pad" length="short"/>
-<pin name="GND" x="-2.54" y="-5.08" visible="pad" length="short"/>
-<pin name="SHIELD" x="2.54" y="-10.16" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="SHIELD1" x="0" y="-10.16" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="SHIELD2" x="0" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="SHIELD3" x="2.54" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
+<wire x1="2.54" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<text x="1.27" y="-2.54" size="2.54" layer="94" rot="R90">USB</text>
+<pin name="D+" x="-5.08" y="5.08" visible="pad" length="short"/>
+<pin name="D-" x="-5.08" y="2.54" visible="pad" length="short"/>
+<pin name="VBUS" x="-5.08" y="0" visible="pad" length="short"/>
+<pin name="GND" x="-5.08" y="-2.54" visible="pad" length="short"/>
 </symbol>
 <symbol name="PHOTOTRANSISTOR">
 <wire x1="-5.588" y1="-2.54" x2="-3.81" y2="-0.762" width="0.1524" layer="94"/>
@@ -7949,35 +7923,16 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 </device>
 </devices>
 </deviceset>
-<deviceset name="USB_MINIB">
+<deviceset name="USB_A_VERTICAL">
 <gates>
 <gate name="G$1" symbol="USB" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="USB_MINIB">
+<device name="" package="USB_A_VERTICAL">
 <connects>
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="SHIELD" pad="SHIELD@1"/>
-<connect gate="G$1" pin="SHIELD1" pad="SHIELD@2"/>
-<connect gate="G$1" pin="SHIELD2" pad="SHIELD@3"/>
-<connect gate="G$1" pin="SHIELD3" pad="SHIELD@4"/>
-<connect gate="G$1" pin="VBUS" pad="VBUS"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-POWER" package="USB_MINIB_POWER">
-<connects>
-<connect gate="G$1" pin="D+" pad="D+"/>
-<connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="SHIELD" pad="SHIELD@1"/>
-<connect gate="G$1" pin="SHIELD1" pad="SHIELD@2"/>
-<connect gate="G$1" pin="SHIELD2" pad="SHIELD@3"/>
-<connect gate="G$1" pin="SHIELD3" pad="SHIELD@4"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
@@ -8018,7 +7973,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R1206" value="10K"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="JP1" library="LED Light" deviceset="USB_MINIB" device="-POWER"/>
+<part name="JP1" library="LED Light" deviceset="USB_A_VERTICAL" device=""/>
 <part name="C1" library="rcl" deviceset="C-US" device="C1206" value="1.0uF"/>
 <part name="LED2" library="LED Light" deviceset="ML-E" device="FAB"/>
 <part name="T1" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT3904LT1"/>
@@ -8037,11 +7992,11 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <instance part="J1" gate="G$1" x="88.9" y="88.9"/>
 <instance part="R1" gate="G$1" x="66.04" y="33.02"/>
 <instance part="R2" gate="G$1" x="91.44" y="30.48" rot="R90"/>
-<instance part="JP1" gate="G$1" x="17.78" y="78.74" rot="R180"/>
+<instance part="JP1" gate="G$1" x="17.78" y="81.28" rot="R180"/>
 <instance part="C1" gate="G$1" x="10.16" y="40.64"/>
 <instance part="LED2" gate="G$1" x="91.44" y="15.24"/>
 <instance part="T1" gate="G$1" x="88.9" y="48.26"/>
-<instance part="R3" gate="G$1" x="86.36" y="40.64" rot="R90"/>
+<instance part="R3" gate="G$1" x="83.82" y="53.34" rot="R270"/>
 <instance part="R4" gate="G$1" x="106.68" y="30.48" rot="R90"/>
 <instance part="LED1" gate="G$1" x="106.68" y="15.24"/>
 <instance part="U$1" gate="G$1" x="76.2" y="50.8"/>
@@ -8072,7 +8027,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="VBUS"/>
-<wire x1="20.32" y1="81.28" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="81.28" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
 <label x="35.56" y="81.28" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
@@ -8115,7 +8070,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="GND"/>
-<wire x1="20.32" y1="83.82" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="83.82" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
 <label x="35.56" y="83.82" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
@@ -8167,8 +8122,12 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PB1(MISO)"/>
-<wire x1="40.64" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="43.18" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
 <label x="55.88" y="43.18" size="1.778" layer="95" rot="MR0"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="58.42" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="78.74" x2="60.96" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="78.74" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -8192,14 +8151,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <segment>
 <pinref part="T1" gate="G$1" pin="B"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="48.26" x2="86.36" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PB4(ADC2)"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="35.56" x2="86.36" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="48.26" x2="83.82" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
