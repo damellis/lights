@@ -7988,8 +7988,8 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <instance part="JP1" gate="G$1" x="17.78" y="78.74" rot="R180"/>
 <instance part="C1" gate="G$1" x="10.16" y="40.64"/>
 <instance part="LED2" gate="G$1" x="91.44" y="15.24"/>
-<instance part="T1" gate="G$1" x="88.9" y="48.26"/>
-<instance part="R3" gate="G$1" x="86.36" y="40.64" rot="R90"/>
+<instance part="T1" gate="G$1" x="88.9" y="45.72"/>
+<instance part="R3" gate="G$1" x="76.2" y="45.72"/>
 <instance part="R4" gate="G$1" x="106.68" y="30.48" rot="R90"/>
 <instance part="LED1" gate="G$1" x="106.68" y="15.24"/>
 </instances>
@@ -8023,7 +8023,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 </segment>
 <segment>
 <pinref part="T1" gate="G$1" pin="C"/>
-<wire x1="91.44" y1="53.34" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="50.8" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
 <label x="88.9" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -8035,8 +8035,9 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PB0(MOSI)"/>
-<wire x1="40.64" y1="45.72" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="45.72" x2="71.12" y2="45.72" width="0.1524" layer="91"/>
 <label x="55.88" y="45.72" size="1.778" layer="95" rot="MR0"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8118,7 +8119,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="T1" gate="G$1" pin="E"/>
-<wire x1="91.44" y1="43.18" x2="91.44" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="40.64" x2="91.44" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="35.56" x2="106.68" y2="35.56" width="0.1524" layer="91"/>
 <junction x="91.44" y="35.56"/>
@@ -8128,14 +8129,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <segment>
 <pinref part="T1" gate="G$1" pin="B"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="48.26" x2="86.36" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PB4(ADC2)"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="35.56" x2="86.36" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="45.72" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
