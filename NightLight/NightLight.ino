@@ -1,5 +1,5 @@
 int sensor = 3; // analog input channel (not pin number) of the light sensor
-int ledPin = 4;
+int ledPin = 1;
 int val;
 
 void setup() {
@@ -19,6 +19,6 @@ void loop() {
   // if it's dark in the room, turn on the led
   if (val > 700) {
     digitalWrite(ledPin, HIGH);
-    delay(10000);
+    delay(5000);
   }
 }
