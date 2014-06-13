@@ -7790,45 +7790,13 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <vertex x="-1.05" y="-1.675"/>
 </polygon>
 </package>
-<package name="USB_MINIB_POWER">
-<wire x1="-0.03" y1="3.8" x2="2.07" y2="3.8" width="0.2032" layer="21"/>
-<wire x1="4.57" y1="3.1" x2="4.57" y2="2.2" width="0.2032" layer="21"/>
-<wire x1="4.57" y1="-2.2" x2="4.57" y2="-3.1" width="0.2032" layer="21"/>
-<wire x1="2.07" y1="-3.8" x2="-0.03" y2="-3.8" width="0.2032" layer="21"/>
-<wire x1="-4.63" y1="3.8" x2="-4.63" y2="-3.8" width="0.2032" layer="51"/>
-<wire x1="-4.63" y1="-3.8" x2="-3.23" y2="-3.8" width="0.2032" layer="51"/>
-<wire x1="-4.63" y1="3.8" x2="-3.23" y2="3.8" width="0.2032" layer="51"/>
-<smd name="D+" x="3.77" y="0" dx="2.5" dy="0.35" layer="1"/>
-<smd name="D-" x="3.77" y="0.8" dx="2.5" dy="0.35" layer="1"/>
-<smd name="GND" x="3.77" y="-1.8" dx="2.5" dy="0.75" layer="1"/>
-<smd name="ID" x="3.77" y="-0.8" dx="2.5" dy="0.35" layer="1"/>
-<smd name="SHIELD@1" x="-1.73" y="-4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="SHIELD@2" x="-1.73" y="4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="SHIELD@4" x="3.77" y="-4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="SHIELD@3" x="3.77" y="4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="VBUS" x="3.77" y="1.8" dx="2.5" dy="0.75" layer="1"/>
-<text x="-2.54" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-2.54" y="0" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="USB_MINIB">
-<wire x1="-0.03" y1="3.8" x2="2.07" y2="3.8" width="0.2032" layer="21"/>
-<wire x1="4.57" y1="3.1" x2="4.57" y2="2.2" width="0.2032" layer="21"/>
-<wire x1="4.57" y1="-2.2" x2="4.57" y2="-3.1" width="0.2032" layer="21"/>
-<wire x1="2.07" y1="-3.8" x2="-0.03" y2="-3.8" width="0.2032" layer="21"/>
-<wire x1="-4.63" y1="3.8" x2="-4.63" y2="-3.8" width="0.2032" layer="51"/>
-<wire x1="-4.63" y1="-3.8" x2="-3.23" y2="-3.8" width="0.2032" layer="51"/>
-<wire x1="-4.63" y1="3.8" x2="-3.23" y2="3.8" width="0.2032" layer="51"/>
-<smd name="D+" x="3.77" y="0" dx="2.5" dy="0.35" layer="1"/>
-<smd name="D-" x="3.77" y="0.8" dx="2.5" dy="0.35" layer="1"/>
-<smd name="GND" x="3.77" y="-1.6" dx="2.5" dy="0.35" layer="1"/>
-<smd name="ID" x="3.77" y="-0.8" dx="2.5" dy="0.35" layer="1"/>
-<smd name="SHIELD@1" x="-1.73" y="-4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="SHIELD@2" x="-1.73" y="4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="SHIELD@4" x="3.77" y="-4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="SHIELD@3" x="3.77" y="4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="VBUS" x="3.77" y="1.6" dx="2.5" dy="0.35" layer="1"/>
-<text x="-2.54" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-2.54" y="0" size="0.4064" layer="27">&gt;VALUE</text>
+<package name="CR2032_TH">
+<pad name="+" x="-13.5" y="1.25" drill="1"/>
+<pad name="+'" x="-13.5" y="-1.25" drill="1"/>
+<pad name="-" x="13.5" y="0" drill="1"/>
+<wire x1="-7" y1="10" x2="7" y2="10" width="0.127" layer="21"/>
+<wire x1="-7" y1="-10" x2="7" y2="-10" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="10" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -7865,19 +7833,13 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <text x="-0.889" y="-2.032" size="1.016" layer="95">TH</text>
 <pin name="TH" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
-<symbol name="USB">
-<wire x1="5.08" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="0" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<text x="3.81" y="-5.08" size="2.54" layer="94" rot="R90">USB</text>
-<pin name="D+" x="-2.54" y="2.54" visible="pad" length="short"/>
-<pin name="D-" x="-2.54" y="0" visible="pad" length="short"/>
-<pin name="VBUS" x="-2.54" y="-2.54" visible="pad" length="short"/>
-<pin name="GND" x="-2.54" y="-5.08" visible="pad" length="short"/>
-<pin name="SHIELD" x="2.54" y="-10.16" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="SHIELD1" x="0" y="-10.16" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="SHIELD2" x="0" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="SHIELD3" x="2.54" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
+<symbol name="BATTERY">
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<pin name="-" x="5.08" y="0" length="middle" rot="R180"/>
+<pin name="+" x="-7.62" y="0" length="middle"/>
+<text x="-5.08" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -7915,36 +7877,290 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 </device>
 </devices>
 </deviceset>
-<deviceset name="USB_MINIB">
+<deviceset name="BATTERY">
 <gates>
-<gate name="G$1" symbol="USB" x="0" y="0"/>
+<gate name="G$1" symbol="BATTERY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="USB_MINIB">
+<device name="-CR2032" package="CR2032_TH">
 <connects>
-<connect gate="G$1" pin="D+" pad="D+"/>
-<connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="SHIELD" pad="SHIELD@1"/>
-<connect gate="G$1" pin="SHIELD1" pad="SHIELD@2"/>
-<connect gate="G$1" pin="SHIELD2" pad="SHIELD@3"/>
-<connect gate="G$1" pin="SHIELD3" pad="SHIELD@4"/>
-<connect gate="G$1" pin="VBUS" pad="VBUS"/>
+<connect gate="G$1" pin="+" pad="+ +'"/>
+<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-POWER" package="USB_MINIB_POWER">
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="analog-devices">
+<description>&lt;b&gt;Analog Devices Components&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOT23-5">
+<description>&lt;b&gt;5-Lead Small Outline Transistor&lt;/b&gt; Package SOT-23&lt;p&gt;
+Source: http://www.analog.com/UploadedFiles/Data_Sheets/346131962AD8067_a.pdf</description>
+<wire x1="1.372" y1="0.735" x2="1.372" y2="-0.735" width="0.1524" layer="21"/>
+<wire x1="1.372" y1="-0.735" x2="-1.372" y2="-0.735" width="0.1524" layer="51"/>
+<wire x1="-1.372" y1="-0.735" x2="-1.372" y2="0.735" width="0.1524" layer="21"/>
+<wire x1="-1.372" y1="0.735" x2="1.372" y2="0.735" width="0.1524" layer="51"/>
+<wire x1="-0.522" y1="0.735" x2="0.522" y2="0.735" width="0.1524" layer="21"/>
+<wire x1="-0.428" y1="-0.735" x2="-0.522" y2="-0.735" width="0.1524" layer="21"/>
+<wire x1="0.522" y1="-0.735" x2="0.428" y2="-0.735" width="0.1524" layer="21"/>
+<wire x1="-1.328" y1="-0.735" x2="-1.372" y2="-0.735" width="0.1524" layer="21"/>
+<wire x1="1.372" y1="-0.735" x2="1.328" y2="-0.735" width="0.1524" layer="21"/>
+<wire x1="1.328" y1="0.735" x2="1.372" y2="0.735" width="0.1524" layer="21"/>
+<wire x1="-1.372" y1="0.735" x2="-1.328" y2="0.735" width="0.1524" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="-1.425" x2="-0.7" y2="-0.775" layer="51"/>
+<rectangle x1="-0.25" y1="-1.425" x2="0.25" y2="-0.775" layer="51"/>
+<rectangle x1="0.7" y1="-1.425" x2="1.2" y2="-0.775" layer="51"/>
+<rectangle x1="0.7" y1="0.775" x2="1.2" y2="1.425" layer="51"/>
+<rectangle x1="-1.2" y1="0.775" x2="-0.7" y2="1.425" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="OP+-VS">
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.778" width="0.1524" layer="94"/>
+<text x="7.62" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-1.778" y="1.778" size="1.27" layer="96">+</text>
+<text x="-1.524" y="-2.794" size="1.27" layer="96">-</text>
+<text x="3.302" y="3.556" size="1.27" layer="96">+VS</text>
+<text x="3.302" y="-3.556" size="1.27" layer="96" rot="MR180">-VS</text>
+<pin name="IN+" x="-5.08" y="2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="IN-" x="-5.08" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="OUT" x="7.62" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<pin name="-VS" x="2.54" y="-5.08" visible="pad" length="short" direction="in" rot="R90"/>
+<pin name="+VS" x="2.54" y="5.08" visible="pad" length="short" direction="in" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AD8614" prefix="IC">
+<description>&lt;b&gt;Single and Quad 18 V Operational Amplifiers&lt;/b&gt;&lt;p&gt;
+Source: http://www.analog.com/static/imported-files/data_sheets/AD8614_8644.pdf</description>
+<gates>
+<gate name="G$1" symbol="OP+-VS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="RJ" package="SOT23-5">
 <connects>
-<connect gate="G$1" pin="D+" pad="D+"/>
-<connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="SHIELD" pad="SHIELD@1"/>
-<connect gate="G$1" pin="SHIELD1" pad="SHIELD@2"/>
-<connect gate="G$1" pin="SHIELD2" pad="SHIELD@3"/>
-<connect gate="G$1" pin="SHIELD3" pad="SHIELD@4"/>
-<connect gate="G$1" pin="VBUS" pad="VBUS"/>
+<connect gate="G$1" pin="+VS" pad="5"/>
+<connect gate="G$1" pin="-VS" pad="2"/>
+<connect gate="G$1" pin="IN+" pad="3"/>
+<connect gate="G$1" pin="IN-" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="ALTERA CORPORATION" constant="no"/>
+<attribute name="MPN" value="AD8614ARTZ-REEL7" constant="no"/>
+<attribute name="OC_FARNELL" value="1464998" constant="no"/>
+<attribute name="OC_NEWARK" value="88H0303" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="microphon">
+<description>&lt;b&gt;Microphon&lt;/b&gt; from&lt;p&gt;
+JLI Electronics - www.jlielectronics.com&lt;br&gt;
+Panansonic - http://industrial.panasonic.com&lt;br&gt;
+&lt;p&gt;
+&lt;author&gt;librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="F6035AP">
+<description>&lt;b&gt;Omnibidirectional Electret Condenser Microphon&lt;/b&gt;&lt;p&gt;
+Source: F6035AP.pdf</description>
+<circle x="0" y="0" radius="2.8754" width="0.2032" layer="21"/>
+<circle x="1.9" y="0" radius="0.4279" width="0" layer="21"/>
+<circle x="0" y="0" radius="2.625" width="1" layer="41"/>
+<pad name="2" x="0" y="-0.95" drill="0.7" diameter="1.2"/>
+<pad name="1" x="0" y="0.95" drill="0.7" diameter="1.2"/>
+<text x="-2.4" y="3.2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.4" y="-4.8" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="F6050AP">
+<description>&lt;b&gt;Omnibidirectional Electret Condenser Microphon&lt;/b&gt;&lt;p&gt;
+Source: F6050AP.pdf</description>
+<circle x="0" y="0" radius="2.8754" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="2.625" width="1" layer="41"/>
+<pad name="2" x="0" y="-1.27" drill="0.7" diameter="1.2"/>
+<pad name="1" x="0" y="1.27" drill="0.7" diameter="1.2"/>
+<text x="-2.4" y="3.2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.4" y="-4.8" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="1.5499" y1="-2.0251" x2="1.9499" y2="-1.4751" layer="21" rot="R45"/>
+<rectangle x1="-1.95" y1="-2.025" x2="-1.55" y2="-1.475" layer="21" rot="R315"/>
+</package>
+<package name="WM-61A">
+<description>&lt;b&gt;Omnidirectional Back Electret Condenser Microphone Cartridge&lt;/b&gt;&lt;p&gt;
+Source: www.panasonic.com/industrial/components/pdf/em06_wm61_a_b_dne.pdf</description>
+<wire x1="-2.75" y1="0.5" x2="-2.25" y2="0.5" width="0.2032" layer="21"/>
+<wire x1="-2.25" y1="0.5" x2="-2.25" y2="-0.5" width="0.2032" layer="21"/>
+<wire x1="-2.25" y1="-0.5" x2="-2.75" y2="-0.5" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="2.9" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="2.85" width="0.6" layer="41"/>
+<circle x="1.9" y="0" radius="0.3758" width="0" layer="21"/>
+<smd name="1" x="0" y="0.95" dx="2.5" dy="1.3" layer="1" roundness="100"/>
+<smd name="2" x="0" y="-0.95" dx="2.5" dy="1.3" layer="1" roundness="100"/>
+<text x="-2.794" y="3.302" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.794" y="-4.572" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="WM-61B">
+<description>&lt;b&gt;Omnidirectional Back Electret Condenser Microphone Cartridge&lt;/b&gt;&lt;p&gt;
+Source: www.panasonic.com/industrial/components/pdf/em06_wm61_a_b_dne.pdf</description>
+<circle x="0" y="0" radius="2.9" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="2.85" width="0.6" layer="41"/>
+<circle x="2" y="0" radius="0.3783" width="0" layer="21"/>
+<pad name="1" x="0" y="0.95" drill="0.6" diameter="1"/>
+<pad name="2" x="0" y="-0.95" drill="0.6" diameter="1"/>
+<text x="-2.794" y="3.302" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.794" y="-4.572" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.8" y1="-0.225" x2="-2.325" y2="0.225" layer="21"/>
+</package>
+<package name="WM-62PC/62PK">
+<description>&lt;b&gt;Omnidirectional Back Electret Condenser Microphone Cartridge&lt;/b&gt;&lt;p&gt;
+Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</description>
+<circle x="0" y="0" radius="2.9" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="2.85" width="0.6" layer="41"/>
+<pad name="1" x="-1" y="0.95" drill="0.6" diameter="1"/>
+<pad name="2" x="-1" y="-0.95" drill="0.6" diameter="1"/>
+<text x="-2.794" y="3.302" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.794" y="-4.572" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="WM-63PR">
+<description>&lt;b&gt;Omnidirectional Back Electret Condenser Microphone Cartridge&lt;/b&gt;&lt;p&gt;
+Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE3.pdf</description>
+<circle x="0" y="0" radius="2.9" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="2.85" width="0.6" layer="41"/>
+<pad name="1" x="-1" y="0.95" drill="0.6" diameter="1"/>
+<pad name="2" x="-1" y="-0.95" drill="0.6" diameter="1"/>
+<text x="-2.794" y="3.302" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.794" y="-4.572" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="WM-64PC/64PK">
+<description>&lt;b&gt;Omnidirectional Back Electret Condenser Microphone Cartridge&lt;/b&gt;&lt;p&gt;
+Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</description>
+<circle x="0" y="0" radius="2.9" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="2.85" width="0.6" layer="41"/>
+<pad name="1" x="-1" y="0.95" drill="0.6" diameter="1"/>
+<pad name="2" x="-1" y="-0.95" drill="0.6" diameter="1"/>
+<text x="-2.794" y="3.302" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.794" y="-4.572" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="WM-64PN">
+<description>&lt;b&gt;Omnidirectional Back Electret Condenser Microphone Cartridge&lt;/b&gt;&lt;p&gt;
+Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</description>
+<circle x="0" y="0" radius="2.9" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="2.85" width="0.6" layer="41"/>
+<pad name="1" x="-1" y="0.95" drill="0.6" diameter="1"/>
+<pad name="2" x="-1" y="-0.95" drill="0.6" diameter="1"/>
+<text x="-2.794" y="3.302" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.794" y="-4.572" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CONDENSER-MICROPHON">
+<wire x1="1.27" y1="-1.27" x2="2.032" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-0.254" x2="2.032" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-1.27" x2="2.032" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-0.254" x2="2.54" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="3.302" y2="-1.27" width="0.1524" layer="94"/>
+<circle x="2.286" y="-1.27" radius="2.54" width="0.254" layer="94"/>
+<rectangle x1="4.826" y1="-3.81" x2="5.334" y2="1.27" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="pad" length="middle" direction="pas"/>
+<pin name="2" x="-5.08" y="-2.54" visible="pad" length="middle" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ELECTRET_MICROPHON-" prefix="M">
+<description>&lt;b&gt;Electret Condenser Microphone&lt;/b&gt;&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CONDENSER-MICROPHON" x="0" y="0"/>
+</gates>
+<devices>
+<device name="F6035AP" package="F6035AP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="F6050AP" package="F6050AP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="WM-61A" package="WM-61A">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="WM-61B" package="WM-61B">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="WM-62PC/62PK" package="WM-62PC/62PK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="WM-63PR" package="WM-63PR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="WM-64PC/64PK" package="WM-64PC/64PK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="WM.64PN" package="WM-64PN">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7968,13 +8184,20 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R1206" value="10K"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="JP1" library="LED Light" deviceset="USB_MINIB" device="-POWER"/>
 <part name="C1" library="rcl" deviceset="C-US" device="C1206" value="1.0uF"/>
 <part name="LED2" library="LED Light" deviceset="ML-E" device="FAB"/>
 <part name="T1" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT3904LT1"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="R1206" value="1K"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="LED1" library="LED Light" deviceset="ML-E" device="FAB"/>
+<part name="IC1" library="analog-devices" deviceset="AD8614" device="RJ"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="R1206" value="10K"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="R1206" value="10K"/>
+<part name="C2" library="rcl" deviceset="C-US" device="C1206" value="0.1uF"/>
+<part name="R7" library="rcl" deviceset="R-US_" device="R1206" value="10K"/>
+<part name="R8" library="rcl" deviceset="R-US_" device="R1206" value="10K"/>
+<part name="C3" library="rcl" deviceset="C-US" device="C1206" value="1uF"/>
+<part name="R9" library="rcl" deviceset="R-US_" device="R1206" value="1K"/>
+<part name="M1" library="microphon" deviceset="ELECTRET_MICROPHON-" device="WM.64PN"/>
+<part name="U$1" library="LED Light" deviceset="BATTERY" device="-CR2032"/>
 </parts>
 <sheets>
 <sheet>
@@ -7985,13 +8208,20 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <instance part="J1" gate="G$1" x="88.9" y="88.9"/>
 <instance part="R1" gate="G$1" x="66.04" y="33.02"/>
 <instance part="R2" gate="G$1" x="91.44" y="30.48" rot="R90"/>
-<instance part="JP1" gate="G$1" x="17.78" y="78.74" rot="R180"/>
 <instance part="C1" gate="G$1" x="10.16" y="40.64"/>
 <instance part="LED2" gate="G$1" x="91.44" y="15.24"/>
 <instance part="T1" gate="G$1" x="88.9" y="45.72"/>
 <instance part="R3" gate="G$1" x="76.2" y="45.72"/>
-<instance part="R4" gate="G$1" x="106.68" y="30.48" rot="R90"/>
-<instance part="LED1" gate="G$1" x="106.68" y="15.24"/>
+<instance part="IC1" gate="G$1" x="152.4" y="38.1"/>
+<instance part="R5" gate="G$1" x="132.08" y="45.72" rot="R90"/>
+<instance part="R6" gate="G$1" x="132.08" y="35.56" rot="R90"/>
+<instance part="C2" gate="G$1" x="116.84" y="40.64"/>
+<instance part="R7" gate="G$1" x="170.18" y="38.1"/>
+<instance part="R8" gate="G$1" x="200.66" y="43.18" rot="R90"/>
+<instance part="C3" gate="G$1" x="190.5" y="38.1" rot="R90"/>
+<instance part="R9" gate="G$1" x="182.88" y="38.1"/>
+<instance part="M1" gate="G$1" x="205.74" y="38.1"/>
+<instance part="U$1" gate="G$1" x="27.94" y="78.74" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -8017,14 +8247,34 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <label x="76.2" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="VBUS"/>
-<wire x1="20.32" y1="81.28" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
-<label x="35.56" y="81.28" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
 <pinref part="T1" gate="G$1" pin="C"/>
 <wire x1="91.44" y1="50.8" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
 <label x="88.9" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="+VS"/>
+<wire x1="154.94" y1="43.18" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
+<label x="152.4" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="50.8" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
+<label x="129.54" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="116.84" y1="43.18" x2="116.84" y2="55.88" width="0.1524" layer="91"/>
+<label x="114.3" y="55.88" size="1.778" layer="95"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="200.66" y1="48.26" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
+<label x="198.12" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="+"/>
+<wire x1="27.94" y1="86.36" x2="27.94" y2="99.06" width="0.1524" layer="91"/>
+<label x="25.4" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -8056,19 +8306,34 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <junction x="10.16" y="33.02"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="GND"/>
-<wire x1="20.32" y1="83.82" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
-<label x="35.56" y="83.82" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
 <wire x1="91.44" y1="12.7" x2="91.44" y2="2.54" width="0.1524" layer="91"/>
 <label x="88.9" y="0" size="1.778" layer="95"/>
 <pinref part="LED2" gate="G$1" pin="C@1"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="C@1"/>
-<wire x1="106.68" y1="12.7" x2="106.68" y2="2.54" width="0.1524" layer="91"/>
-<label x="104.14" y="0" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="-VS"/>
+<wire x1="154.94" y1="33.02" x2="154.94" y2="25.4" width="0.1524" layer="91"/>
+<label x="152.4" y="22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="30.48" x2="132.08" y2="25.4" width="0.1524" layer="91"/>
+<label x="129.54" y="22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="116.84" y1="35.56" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
+<label x="114.3" y="22.86" size="1.778" layer="95"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<wire x1="200.66" y1="35.56" x2="200.66" y2="22.86" width="0.1524" layer="91"/>
+<label x="198.12" y="20.32" size="1.778" layer="95"/>
+<pinref part="M1" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="-"/>
+<wire x1="27.94" y1="73.66" x2="27.94" y2="63.5" width="0.1524" layer="91"/>
+<label x="25.4" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -8120,9 +8385,6 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="T1" gate="G$1" pin="E"/>
 <wire x1="91.44" y1="40.64" x2="91.44" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="35.56" x2="106.68" y2="35.56" width="0.1524" layer="91"/>
-<junction x="91.44" y="35.56"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -8132,17 +8394,61 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <wire x1="86.36" y1="45.72" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="IN-" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="LED1" gate="G$1" pin="A@1"/>
-<wire x1="106.68" y1="25.4" x2="106.68" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="38.1" x2="177.8" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="38.1" x2="177.8" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="17.78" x2="147.32" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<junction x="177.8" y="38.1"/>
+<pinref part="IC1" gate="G$1" pin="IN-"/>
+<wire x1="147.32" y1="17.78" x2="147.32" y2="35.56" width="0.1524" layer="91"/>
+<label x="147.32" y="27.94" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="MIC" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="OUT"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="38.1" x2="162.56" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="38.1" x2="160.02" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="38.1" x2="162.56" y2="76.2" width="0.1524" layer="91"/>
+<junction x="162.56" y="38.1"/>
+<wire x1="162.56" y1="76.2" x2="147.32" y2="76.2" width="0.1524" layer="91"/>
+<label x="147.32" y="76.2" size="1.778" layer="95"/>
+</segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PB3(ADC3)"/>
-<wire x1="66.04" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
+<label x="55.88" y="38.1" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<junction x="195.58" y="38.1"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="38.1" x2="200.66" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="M1" gate="G$1" pin="1"/>
+<junction x="200.66" y="38.1"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="IN+" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="IN+"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="40.64" x2="147.32" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<junction x="132.08" y="40.64"/>
+<label x="139.7" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

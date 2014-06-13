@@ -55,7 +55,7 @@
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -223,6 +223,14 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <wire x1="1.7" y1="3" x2="-0.6" y2="3" width="0.127" layer="21"/>
 <wire x1="-0.6" y1="3" x2="-0.6" y2="-3" width="0.127" layer="21"/>
 </package>
+<package name="CR2032_TH">
+<pad name="+" x="-13.5" y="1.25" drill="1"/>
+<pad name="+'" x="-13.5" y="-1.25" drill="1"/>
+<pad name="-" x="13.5" y="0" drill="1"/>
+<wire x1="-7" y1="10" x2="7" y2="10" width="0.127" layer="21"/>
+<wire x1="-7" y1="-10" x2="7" y2="-10" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="10" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED-A2C2">
@@ -304,6 +312,14 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <rectangle x1="2.286" y1="-3.81" x2="2.794" y2="1.27" layer="94"/>
 <pin name="1" x="-7.62" y="0" visible="pad" length="middle" direction="pas"/>
 <pin name="2" x="-7.62" y="-2.54" visible="pad" length="middle" direction="pas"/>
+</symbol>
+<symbol name="BATTERY">
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<pin name="-" x="5.08" y="0" length="middle" rot="R180"/>
+<pin name="+" x="-7.62" y="0" length="middle"/>
+<text x="-5.08" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -403,6 +419,22 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BATTERY">
+<gates>
+<gate name="G$1" symbol="BATTERY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-CR2032" package="CR2032_TH">
+<connects>
+<connect gate="G$1" pin="+" pad="+ +'"/>
+<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
