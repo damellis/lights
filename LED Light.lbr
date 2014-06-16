@@ -231,6 +231,13 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <wire x1="-7" y1="-10" x2="7" y2="-10" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="10" width="0.127" layer="21"/>
 </package>
+<package name="ELECTRET_6MM_TH">
+<circle x="0" y="0" radius="2.9" width="0.2032" layer="21"/>
+<pad name="1" x="-1" y="0.95" drill="0.8"/>
+<pad name="2" x="-1" y="-0.95" drill="0.8"/>
+<text x="-2.794" y="3.302" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.794" y="-4.572" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LED-A2C2">
@@ -415,10 +422,19 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <gate name="G$1" symbol="ELECTRET_MIC" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="ELECTRET_6MM_SMD">
+<device name="-SMD" package="ELECTRET_6MM_SMD">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TH" package="ELECTRET_6MM_TH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
