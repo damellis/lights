@@ -55,7 +55,7 @@
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -233,6 +233,85 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <smd name="P$1" x="-6.5" y="-1" dx="2.54" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$2" x="6.5" y="-1" dx="2.54" dy="1.27" layer="1" rot="R90"/>
 </package>
+<package name="SOIC16">
+<wire x1="3.5814" y1="3.7338" x2="-6.1214" y2="3.7338" width="0.1524" layer="21"/>
+<wire x1="3.5814" y1="-3.7338" x2="3.9624" y2="-3.3528" width="0.1524" layer="21" curve="90"/>
+<wire x1="-6.5024" y1="3.3528" x2="-6.1214" y2="3.7338" width="0.1524" layer="21" curve="-90"/>
+<wire x1="3.5814" y1="3.7338" x2="3.9624" y2="3.3528" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-6.5024" y1="-3.3528" x2="-6.1214" y2="-3.7338" width="0.1524" layer="21" curve="90"/>
+<wire x1="-6.1214" y1="-3.7338" x2="3.5814" y2="-3.7338" width="0.1524" layer="21"/>
+<wire x1="3.9624" y1="-3.3528" x2="3.9624" y2="3.3528" width="0.1524" layer="21"/>
+<wire x1="-6.5024" y1="3.3528" x2="-6.5024" y2="-3.3528" width="0.1524" layer="21"/>
+<wire x1="-6.477" y1="-3.3782" x2="3.937" y2="-3.3782" width="0.0508" layer="21"/>
+<wire x1="-6.5024" y1="1.27" x2="-6.5024" y2="-1.27" width="0.1524" layer="21" curve="-180"/>
+<smd name="1" x="-5.715" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="2" x="-4.445" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="3" x="-3.175" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="4" x="-1.905" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="5" x="-0.635" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="6" x="0.635" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="7" x="1.905" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="8" x="3.175" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="9" x="3.175" y="5.1308" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="10" x="1.905" y="5.1308" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="11" x="0.635" y="5.1308" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="12" x="-0.635" y="5.1308" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="13" x="-1.905" y="5.1308" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="14" x="-3.175" y="5.1308" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="15" x="-4.445" y="5.1308" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="16" x="-5.715" y="5.1308" dx="0.6604" dy="2.032" layer="1"/>
+<text x="-3.81" y="-1.778" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="2.54" y="2.032" size="1.27" layer="25" ratio="10" rot="R180">&gt;NAME</text>
+<rectangle x1="-5.969" y1="-3.8608" x2="-5.461" y2="-3.7338" layer="21"/>
+<rectangle x1="-5.969" y1="-5.334" x2="-5.461" y2="-3.8608" layer="51"/>
+<rectangle x1="-4.699" y1="-3.8608" x2="-4.191" y2="-3.7338" layer="21"/>
+<rectangle x1="-4.699" y1="-5.334" x2="-4.191" y2="-3.8608" layer="51"/>
+<rectangle x1="-3.429" y1="-3.8608" x2="-2.921" y2="-3.7338" layer="21"/>
+<rectangle x1="-3.429" y1="-5.334" x2="-2.921" y2="-3.8608" layer="51"/>
+<rectangle x1="-2.159" y1="-3.8608" x2="-1.651" y2="-3.7338" layer="21"/>
+<rectangle x1="-2.159" y1="-5.334" x2="-1.651" y2="-3.8608" layer="51"/>
+<rectangle x1="-0.889" y1="-5.334" x2="-0.381" y2="-3.8608" layer="51"/>
+<rectangle x1="-0.889" y1="-3.8608" x2="-0.381" y2="-3.7338" layer="21"/>
+<rectangle x1="0.381" y1="-3.8608" x2="0.889" y2="-3.7338" layer="21"/>
+<rectangle x1="0.381" y1="-5.334" x2="0.889" y2="-3.8608" layer="51"/>
+<rectangle x1="1.651" y1="-3.8608" x2="2.159" y2="-3.7338" layer="21"/>
+<rectangle x1="1.651" y1="-5.334" x2="2.159" y2="-3.8608" layer="51"/>
+<rectangle x1="2.921" y1="-3.8608" x2="3.429" y2="-3.7338" layer="21"/>
+<rectangle x1="2.921" y1="-5.334" x2="3.429" y2="-3.8608" layer="51"/>
+<rectangle x1="-5.969" y1="3.7338" x2="-5.461" y2="3.8608" layer="21"/>
+<rectangle x1="-4.699" y1="3.7338" x2="-4.191" y2="3.8608" layer="21"/>
+<rectangle x1="-3.429" y1="3.7338" x2="-2.921" y2="3.8608" layer="21"/>
+<rectangle x1="-2.159" y1="3.7338" x2="-1.651" y2="3.8608" layer="21"/>
+<rectangle x1="-0.889" y1="3.7338" x2="-0.381" y2="3.8608" layer="21"/>
+<rectangle x1="0.381" y1="3.7338" x2="0.889" y2="3.8608" layer="21"/>
+<rectangle x1="1.651" y1="3.7338" x2="2.159" y2="3.8608" layer="21"/>
+<rectangle x1="2.921" y1="3.7338" x2="3.429" y2="3.8608" layer="21"/>
+<rectangle x1="2.921" y1="3.8608" x2="3.429" y2="5.334" layer="51" rot="R180"/>
+<rectangle x1="1.651" y1="3.8608" x2="2.159" y2="5.334" layer="51" rot="R180"/>
+<rectangle x1="0.381" y1="3.8608" x2="0.889" y2="5.334" layer="51" rot="R180"/>
+<rectangle x1="-0.889" y1="3.8608" x2="-0.381" y2="5.334" layer="51" rot="R180"/>
+<rectangle x1="-2.159" y1="3.8608" x2="-1.651" y2="5.334" layer="51" rot="R180"/>
+<rectangle x1="-3.429" y1="3.8608" x2="-2.921" y2="5.334" layer="51" rot="R180"/>
+<rectangle x1="-4.699" y1="3.8608" x2="-4.191" y2="5.334" layer="51" rot="R180"/>
+<rectangle x1="-5.969" y1="3.8608" x2="-5.461" y2="5.334" layer="51" rot="R180"/>
+</package>
+<package name="USB_MINIB_VERTICAL">
+<pad name="D-" x="-0.9" y="-0.8" drill="0.8" rot="R180"/>
+<pad name="ID" x="-0.9" y="0.8" drill="0.8" rot="R180"/>
+<pad name="GND" x="0.9" y="1.6" drill="0.8" rot="R180"/>
+<pad name="D+" x="0.9" y="0" drill="0.8" rot="R180"/>
+<pad name="VBUS" x="0.9" y="-1.6" drill="0.8" rot="R180"/>
+<pad name="SUPPORT1" x="0" y="4.2" drill="2"/>
+<pad name="SUPPORT2" x="0" y="-4.2" drill="2"/>
+<wire x1="-2" y1="4" x2="-2" y2="-4" width="0.127" layer="21"/>
+<wire x1="2" y1="3" x2="2" y2="-3" width="0.127" layer="21"/>
+<wire x1="-2" y1="4" x2="-0.5" y2="4" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="4" x2="0.5" y2="3" width="0.127" layer="51"/>
+<wire x1="0.5" y1="3" x2="2" y2="3" width="0.127" layer="51"/>
+<wire x1="-2" y1="-4" x2="-0.5" y2="-4" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="-4" x2="0.5" y2="-3" width="0.127" layer="51"/>
+<wire x1="0.5" y1="-3" x2="2" y2="-3" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED-A2C2">
@@ -312,6 +391,19 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <pin name="D-" x="-5.08" y="2.54" visible="pad" length="short"/>
 <pin name="VBUS" x="-5.08" y="0" visible="pad" length="short"/>
 <pin name="GND" x="-5.08" y="-2.54" visible="pad" length="short"/>
+</symbol>
+<symbol name="MMA1270KEG">
+<pin name="VDD" x="-15.24" y="2.54" length="middle"/>
+<pin name="VSS" x="-15.24" y="0" length="middle"/>
+<pin name="VOUT" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="STATUS" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="ST" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -402,17 +494,47 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 </device>
 </devices>
 </deviceset>
-<deviceset name="USB_A_VERTICAL">
+<deviceset name="USB">
 <gates>
 <gate name="G$1" symbol="USB" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="USB_A_VERTICAL">
+<device name="-A-VERTICAL" package="USB_A_VERTICAL">
 <connects>
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-B-VERTICAL" package="USB_MINIB_VERTICAL">
+<connects>
+<connect gate="G$1" pin="D+" pad="D+"/>
+<connect gate="G$1" pin="D-" pad="D-"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VBUS" pad="VBUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMA1270KEG">
+<gates>
+<gate name="G$1" symbol="MMA1270KEG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC16">
+<connects>
+<connect gate="G$1" pin="ST" pad="8"/>
+<connect gate="G$1" pin="STATUS" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="6"/>
+<connect gate="G$1" pin="VOUT" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
