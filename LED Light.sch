@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7967,7 +7967,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/XLampML-E.pdf"&gt; Data she
 <part name="U1" library="SparkFun-DigitalIC" deviceset="ATTINY45" device="TINY85-20-SMT" value="Tiny85-20-SMT"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R1206" value="10K"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="R1206"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="R1206" value="24"/>
 <part name="JP1" library="LED Light" deviceset="USB_MINIB" device="-POWER"/>
 <part name="C1" library="rcl" deviceset="C-US" device="C1206" value="1.0uF"/>
 <part name="LED2" library="LED Light" deviceset="ML-E" device="FAB"/>
