@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8046,7 +8046,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8614_8644.pdf<
 <part name="LED2" library="LED Light" deviceset="ML-E" device="FAB"/>
 <part name="T1" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT3904LT1"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="R1206" value="1K"/>
-<part name="IC1" library="analog-devices" deviceset="AD8614" device="RJ"/>
+<part name="IC1" library="analog-devices" deviceset="AD8614" device="RJ" value="AD8615AUJZ"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="R1206" value="10K"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="R1206" value="10K"/>
 <part name="C2" library="rcl" deviceset="C-US" device="C1206" value="0.1uF"/>
