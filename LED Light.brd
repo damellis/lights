@@ -199,6 +199,7 @@
 <hole x="7.62" y="33.02" drill="3.2"/>
 <hole x="93.98" y="33.02" drill="3.2"/>
 <hole x="93.98" y="7.62" drill="3.2"/>
+<text x="21.59" y="5.08" size="1.778" layer="25" font="fixed">Nightlight - David A. Mellis - June 30, 2014</text>
 </plain>
 <libraries>
 <library name="SparkFun-DigitalIC">
