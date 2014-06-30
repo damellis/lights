@@ -8041,7 +8041,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8614_8644.pdf<
 <part name="U1" library="SparkFun-DigitalIC" deviceset="ATTINY45" device="TINY85-20-SMT" value="Tiny85-20-SMT"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R1206" value="10K"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="R1206"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="R1206" value="24"/>
 <part name="C1" library="rcl" deviceset="C-US" device="C1206" value="1.0uF"/>
 <part name="LED2" library="LED Light" deviceset="ML-E" device="FAB"/>
 <part name="T1" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT3904LT1"/>
