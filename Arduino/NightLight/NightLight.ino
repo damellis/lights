@@ -11,13 +11,13 @@ void loop() {
   digitalWrite(ledPin, LOW);
   
   // need to delay a bit to let the light sensor settle
-  delay(5);
+  delay(10);
   
   // now, measure the light level in the room without the light from the led
   val = analogRead(sensor);
   
   // if it's dark in the room, turn on the led
-  if (val > 700) {
+  if (val > 990) {
     analogWrite(ledPin, 128);
     delay(10000);
   }
